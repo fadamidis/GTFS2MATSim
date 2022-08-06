@@ -44,9 +44,9 @@ public class RunGTFS2MATSimExampleRunVehicleCirculation {
 
 	public static void main(String[] args) {
 		//input data
-		String gtfsZipFile = "testing/gtfs_Berlin.zip";
+		String gtfsZipFile = "testing/mvv_gtfs.zip";
 		CoordinateTransformation ct = TransformationFactory.getCoordinateTransformation(TransformationFactory.WGS84, "EPSG:25833");
-		LocalDate date = LocalDate.parse("2020-11-02");
+		LocalDate date = LocalDate.parse("");
 		Boolean overrideMinDelay = false;
 		int minTurnOverTime = 10;
 		

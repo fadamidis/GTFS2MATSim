@@ -53,14 +53,14 @@ public final class RunGTFS2MATSimExample {
 		// http://www.vbb.de/de/article/fahrplan/webservices/datensaetze/1186967.html
 		
 		//input data
-		String gtfsZipFile = "";
+		String gtfsZipFile = "/Users/adfil/Downloads/mvv_gtfs2.zip"; // The .zip directory cannot contain any subfolders
 		CoordinateTransformation ct = TransformationFactory.getCoordinateTransformation(TransformationFactory.WGS84, "EPSG:25833");
-		LocalDate date = LocalDate.parse("2020-06-25");
+		LocalDate date = LocalDate.parse("2022-05-12");
 
 		//output files 
-		String scheduleFile = "transitSchedule.xml.gz";
-		String networkFile = "network.xml.gz";
-		String transitVehiclesFile ="transitVehicles.xml.gz";
+		String scheduleFile = "/Users/adfil/Downloads/transitSchedule.xml.gz";
+		String networkFile = "/Users/adfil/Downloads/network.xml.gz";
+		String transitVehiclesFile ="/Users/adfil/Downloads/transitVehicles.xml.gz";
 		Scenario scenario = ScenarioUtils.createScenario(ConfigUtils.createConfig());
 
 		//Convert GTFS
